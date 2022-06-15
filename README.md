@@ -1,4 +1,4 @@
-<!-- # week3codingassignment
+ # week3codingassignment
 Intro to JavaScript Week 3 Coding Assignment
 
 Points possible: 70
@@ -33,5 +33,4 @@ nameLengths = [5, 3, 4] //create this new array
 10.	Write a function that takes an array of numbers and returns the average of all the elements in the array.
 11.	Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
 12.	Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
-13.	Create a function of your own that solves a problem. In comments, write what the function does and why you created it. -->
-<!--  -->
+13.	Create a function of your own that solves a problem. In comments, write what the function does and why you created it. 
