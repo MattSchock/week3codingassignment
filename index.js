@@ -1,5 +1,6 @@
 //Problem 1
 let ages = [3, 9, 23, 64, 2, 8, 28, 93]  //create array
+console.log('Ages Array', ages);
 
 function findLastElement (array) {                        //finds last element in array.
     return array.slice(-1);
@@ -7,35 +8,36 @@ function findLastElement (array) {                        //finds last element i
 
 let subtractionResult = (findLastElement(ages) - ages[0])  //Subtracts last element from first
 
-console.log(subtractionResult);
+console.log('Subtract last element from the first',subtractionResult);
 
 ages.push(14);                          //adds 14 to end of array
   
 subtractionResult = (findLastElement(ages) - ages[0])  //subtracts last element from first
 
-console.log(subtractionResult);
+console.log('subtracts last element from first after pushing 14 to array', subtractionResult);
 
 let averageAge = 0                          
 for (let i = 0; i < ages.length; i++) {      //Finds average age of ages array.
 averageAge += ages[i];
 }
-console.log(averageAge / ages.length);
+console.log('average age of array', averageAge / ages.length);
 
 
 //Problem 2
 let names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob']   //create names array
+console.log('Names array', names);
 
 let avgNameLength = 0                              //finds average length of names in array
 for (let i = 0; i < names.length; i++) {
     avgNameLength += names[i].length
 }
-console.log(avgNameLength / names.length);
+console.log('average length of names in array', avgNameLength / names.length);
 
 let totalNames = ''                             //prints all names in array in one variable.
 for (let i = 0; i < names.length; i++) {
     totalNames += names[i] + ' '
 }
-console.log(totalNames)
+console.log('all names in array', totalNames)
 
 //Problem 3 How do you access the last element of an array?
 //   Answer: either array.length -1 or in my case use the slice method with a negative value.
@@ -48,20 +50,20 @@ let nameLengths = []                            //outputs array of lengths of el
 for (let i = 0; i < names.length; i++) {
     nameLengths.push(names[i].length)
 }
-console.log(nameLengths);
+console.log('array of lenghths of elements of names array', nameLengths);
 
 //Problem 6
 let nameLengthsSum = 0                             //totals sum of nameLength array
 for (let i = 0; i < nameLengths.length; i++) {
     nameLengthsSum += nameLengths[i]
 }
-console.log(nameLengthsSum);
+console.log('total sum of nameLength array', nameLengthsSum);
 
 
 //Problem 7                                       //logs words passed number of times
 function numberwords (word, n) {
     for (let i = 0; i < n; i++) {
-        console.log(word)
+        console.log('Logs words passed to function number of times', word)
     }
 }
 numberwords('hello', 3)
@@ -70,7 +72,7 @@ numberwords('hello', 3)
 function fullName (firstName, LastName) {
     return firstName + ' ' + LastName
 }
-console.log(fullName('matt', 'schock'));
+console.log('returns fullname', fullName('matt', 'schock'));
 
 //Problem 9                                      //Tests to see if sum of array is greater than 100
 let testArray100 = [1, 2, 3, 4, 100]
@@ -85,7 +87,7 @@ function greaterThan100 (array) {
         return false
     }
 }
-console.log(greaterThan100(testArray100));
+console.log('tests to see if sum of array is larger than 100', greaterThan100(testArray100));
 
 //Problem 10    
 let arraySum = 0                              //Finds average value of array
@@ -96,7 +98,7 @@ function arrayAvg (array) {
     return arraySum / array.length
 }
 
-console.log(arrayAvg(testArray100));
+console.log('average value of array', arrayAvg(testArray100));
 
 //Problem 11
 let testArray2 = [1, 2, 3, 4]
@@ -109,7 +111,7 @@ function compareArraysAvg (array1, array2) {            //compares avg of two ar
         return false
     }
 }
-console.log(compareArraysAvg(testArray2, testArray3));
+console.log('average of two arrays', compareArraysAvg(testArray2, testArray3));
 
 //Problem 12                                         //compares temp and amount of money and decides to buy drink
 let isHotOutside = true
@@ -121,7 +123,7 @@ function willBuyDrink (temp, cash) {
         return false
     }
 }
-console.log(willBuyDrink(isHotOutside, moneyInPocket));
+console.log('decides if to buy drink', willBuyDrink(isHotOutside, moneyInPocket));
 
 //Problem 13                                          //compares cats cuteness level and time since last treat. 
 let catsAreBeingCute = true                           // decides if should feed cats a treat
